@@ -1,0 +1,805 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   perspective: 300px;
+   text-transform: capitalize;
+   transition: all 1s;
+   font-family: 'Jost', sans-serif;
+}
+.head{
+    position: relative;
+    height: 800px;
+    margin-bottom: 30px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    z-index: 10;
+    transform: scale(0);
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #00000070, -1px -1px 2px #00000070;
+    transition: 1s;
+}
+.list-main{
+    color: rgb(185, 78, 114);
+}
+.list-li{
+    color: rgb(129, 123, 123);
+    margin-bottom: 3px;
+    transition: .5s;
+}
+.page-list{
+    position: relative;
+}
+.page-list:hover .list{
+    transform: scale(1);
+}
+.list-li:hover{
+    color: palevioletred;
+    transform: scale(1.04);
+}
+.dott{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.list ul li,.list2{
+    list-style: none;
+}
+ .heada:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0%;
+    bottom: -4px;
+    border-left: 2px solid palevioletred;
+    border-right: 2px solid palevioletred;
+    visibility: hidden;
+    transition: 1s;
+}
+.b:after{
+    bottom: -3px;
+}
+.heada{
+    position: relative;
+    padding: 6px;
+}
+.heada:hover::after{
+    width: 100%;
+    height: 109%;
+    visibility: visible;
+}
+  .heada:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0px;
+    right: -3px;
+    border-top:  2px solid palevioletred;
+    border-bottom:  2px solid palevioletred;
+    transition: .5s;
+}
+.heada:hover::before{
+    width: 104%;
+    height: 100%;
+}   
+.b:hover::before{
+    width: 102%;
+    height: 100%;
+}   
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.head-div1{
+    padding:5px 70px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize; 
+}
+.area2{
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    font-size: 18px;
+}
+.area1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+}
+ .head-img{
+    background-image: url(../Images/7ec1d58581fc888a1d38a807757536bf.png);
+    background-size: cover;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+ }
+.a1,.a2{
+    text-shadow: 1px 2px 2px rgb(224, 139, 167);
+}
+.a1{
+    font-weight: 700;
+    color: #222;
+}
+.a2{
+    font-weight: 300;
+    color: #555;
+}
+.area3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+}
+.area5-ic{
+    position: relative;
+    transition: 3s;
+}
+ .ic4{
+    position: absolute;
+    top: -15px;
+    left: 3px;
+    border-radius: 50%;
+    color: white;
+    background-color: palevioletred;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    transition: 1s;
+    padding-top: 3px;
+} 
+.area2 a:hover{
+    color: palevioletred
+}
+.area5-ic:hover .ic4{
+    transform: translateY(-4px);
+}
+.area3 i:hover{
+    color: palevioletred;
+}
+ .div3{
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px 0;
+    transition: all 3s;}
+ .div3-p{
+    color: white;
+ }
+ .span1{
+    color: palevioletred;
+    font-size: 18px;
+ }
+ .div3-shop{
+    margin: 0 7px;
+    position: relative;
+ }
+ .line{
+    background-color: palevioletred;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    right: -1px;
+    top: 24px;
+ }
+ .div3-shop:hover{
+transform: scale(1.05);
+ }
+ .div3-shop:hover +.div3-p{
+    transform: translateX(-5px);
+ }
+ .div4{
+    background-image: url(../Images/fashion-beauty-concept-closeup-elegant-brunette-woman-with-earrings-wearing-black-dress-r.jpg);
+ background-size: cover;
+ height: 600px;
+ padding: 200px 100px;
+}
+ .div4-content{
+    width: 450px;
+    text-align: center;
+    transform-style: preserve-3d;
+ }
+ .p1{
+    font-family:'Dancing Script',cursive;
+    font-size: 40px;
+margin-bottom: 20px;
+color: palevioletred;
+ }
+ .h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+ }
+ .p2{
+color: rgb(161, 158, 158);
+margin-bottom: 25px;
+ }
+ .btn1{
+    height: 60px;
+    width: 170px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border:none;
+    transition: 1.2s;
+ }
+ .btn1:hover{
+transform:scalez(1.25);
+background-color: white;
+border: 1px solid black;
+color: black;
+ }
+ .mainsec{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    transition: all 3s;
+ }
+ .mainsec .img{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 350px;
+ }
+ .mainsec img{
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 1;
+    transition: 2s;
+ }
+ .main-content{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(bottom,rgb(0, 0, 0,.6),rgb(155, 150, 150,.27),rgb(255, 255, 255,.01));
+    font-size: 13px;
+    color: #fff;
+ }
+ .shop-h h2{
+    font-size: 18px;
+    transition: .5s;
+ }
+ .shop-h:hover{
+    transform: scale(1.07,1);
+ }
+ .main-shop{
+    position: relative;
+    transform: translateY(100px);
+    transition: 1.5s;
+    color: #fff;
+ }
+ .line1{
+    position: absolute;
+    width: 95px;
+    height: 3px;
+    background-color: #fff;
+    top: 25px;
+    left: 128px;
+ }
+ .main-content h1{
+    transition: 1.5s;
+ }
+ .mainsec .img:hover h1{
+    transform: translateY(-10px);
+ }
+ .mainsec .img:hover .main-shop{
+    transform: translateY(0px);
+ }
+ .mainsec .img:hover img{
+    transform: scale(1.1,1.1)
+ }
+ .sec1{
+    margin-bottom: 40px;
+ }
+ .sec1-parent{
+    width: 98%;
+    margin: auto;
+ }
+ .sec1-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    margin: auto;
+ }
+    .sec1-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+.sec1-list{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+}
+.sec1-a{
+    position: relative;
+    color: palevioletred;
+}
+.sec1-line{
+    position: absolute;
+    width: 59px;
+    height: 5px;
+    background-color: palevioletred;
+    top: 40px;
+    left: 4px;
+}
+.sec1-card{
+    overflow: hidden;
+    height: 500px;
+    width: 285px;
+}
+ .sec1-imgh{
+    background-image: url(../Images/fe3359c1-da90-4eca-9c4a-090ea0dad748.jpeg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    visibility: hidden;
+    transform: rotatey(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+    position: absolute;
+    z-index: 1;
+} 
+.sec1-info span{
+    color: #58585c;
+}
+.sec1-card:hover .sec1-imgh{
+    transform: rotatey(0deg);
+     visibility:visible; 
+}
+.sec1-img{
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+}
+.sec1-img1{
+background-image:url(../Images/d0d3dac4-9d05-446b-8d36-92a2862423a1.jpeg) ;
+}
+.sec1-img2{
+    background-image: url(../Images/9b12b27e-549c-4170-a247-23b0eec9e32a.jpeg);
+}
+.sec1-img3{
+    background-image: url(../Images/ellie\ ✨.jpeg);
+}
+.sec1-img4{
+    background-image:url(../Images/laneige\ lip\ sleeping\ mask.jpeg) ;
+}
+.sec1-info{
+   text-align: center;
+    margin: 15px 0;
+    line-height: 30px;
+    color: gray;
+}
+.sec1-h4{
+    color: rgb(12, 11, 11);
+    font-size: 20px;
+}
+.sec1-span{
+    margin-right: 8px;
+}
+.sec1-card:hover .sec1-span{
+    color: black;
+}
+.sec1-card:hover .sec1-h4{
+    color: palevioletred;
+}
+.sec1-arc{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(94, 92, 92);
+}
+.sec1-arc:hover{
+    color: rgb(238, 84, 135);
+}
+.sec1-i{
+    height: 100%;
+    padding:10px 5px ;
+    background-color: rgb(255, 255, 255,.5);
+    width: 20%;
+}
+.sec1-card:hover .sec1-icon{
+    transform: translateY(300px);
+}
+.sec1-icon i{
+    font-size: 30px;
+}
+.sec1-icon{
+      width: 100%; 
+     display: flex;
+    text-align: center;
+    justify-content: center; 
+    padding: 10px 0;
+     transform: translateY(400px); 
+    transition: 1s;
+    position: absolute;
+    z-index: 5;
+}
+.sec1-i:hover{
+    background-color: palevioletred;
+}
+.sec1-i:hover i{
+    color: white;
+}
+.sec2{
+    padding: 40px 0;
+    background-color: rgb(247, 193, 211);
+    box-shadow:1px 1px 3px 3px rgb(156, 148, 148) ;
+    margin-bottom: 40px;
+}
+.sec2-parent{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.sec2-img{
+    background-image: url(../Images/3069726c-0d07-4527-84a1-966d1a61959d.jpeg);
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sec2-content{
+    width: 560px;
+    text-align: center;
+    text-transform: none;
+}
+.sec2-info{
+    margin-top: 21px;
+    color: rgb(105, 102, 102);
+}
+.sec2-acount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2-h1,.sec2-p,.sec2-acount{
+    margin-bottom: 30px;
+}
+.sec2-h1{
+    font-size: 30px;
+    color: rgb(80, 78, 78);
+}
+.sec2-p{
+    color: rgb(233, 40, 130);
+    line-height: 1.5;
+    font-size: 24px;
+}
+.sec2-name{
+    margin-bottom: 4px;
+}
+.sec2 i{
+    margin-top: 100px;
+}
+.sec3{
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sec3-topic,.sec4-h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: rgb(192, 37, 89);
+}
+.sec3-img1{
+    background-image: url(../Images/4bb3f195-6fb8-4401-8832-37d53f5d7f1b.jpeg);
+}
+.sec3-img2{
+    background-image: url(../Images/5f51d60c-151b-48e8-84df-f6f9284d3205.jpeg);
+}
+.sec3-img3{
+    background-image: url(../Images/matt\ Eye\ palette\ \(1\).jpeg);
+}
+.sec3-img4{
+    background-image: url(../Images/Hourglass\ evil\ eye\ palette\ 🤍.jpeg);
+}
+.sec3-imgh{
+    background-image:url(../Images/Maquiagem\ _Make_Up\ on\ Instagram_\ _Tutorial\ 🤎✨️….jpeg) ;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: 1s;
+    position: absolute;
+    z-index: 1;
+}
+.sec1-card:hover .sec3-imgh{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.sec4{
+    padding: 25px 0;
+    line-height: 30px;
+    background-color: rgb(255, 227, 236);
+    box-shadow: 1px 1px 3px 3px rgb(156, 148, 148);
+}
+.sec4-parent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(136, 129, 129);
+}
+.sec4-img{
+    margin-bottom: 20px;
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    transition: .25s;
+}
+.sec4-card{
+    transform-style: preserve-3d;
+}
+.sec4-img1{
+    background-image: url(../Images/112\ Insanely\ Good\ Nail\ Art\ Ideas\ To\ Try\ At\ Your\ Next\ Appointment.jpeg);
+}
+.sec4-img2{
+    background-image: url(../Images/front8.jpeg);
+}
+.sec4-img3{
+    background-image: url(../Images/92c851dc-bb0d-4407-b580-258e99a28dc0.jpeg);
+}
+.sec4-card{
+    width: 360px;
+    height: 650px;
+    transition: 1s;
+}
+.sec4-a{
+    text-decoration: underline;
+    font-size: 20px; 
+    transition: .7s;
+    padding-left: 5px;
+    display: inline-block;
+}
+.sec4-h2{
+    text-align:center ;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.sec4-p2{
+    font-size: 22px;
+}
+.sec4-img:hover{
+transform:translateY(-4px)  scale(1.05);
+}
+.sec4-card:hover .sec4-p2{
+    color: rgb(236, 95, 142);
+}
+.sec4-a:hover{
+    transform: scale(1.02);
+}
+.sec4-p2,.sec4-a{
+    color: rgb(58, 56, 56);
+}
+.sec5{
+    padding: 80px 0;
+}
+.sec5-parent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.sec5 i{
+    font-size: 45px;
+}
+.sec5-content{
+    overflow: hidden;
+    text-align: center;
+}
+.sec5-icon{
+    overflow: hidden; 
+    position: relative;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.sec5 h3{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.sec5 p{
+    font-size: 14px;
+    color: rgb(59, 59, 56);
+}
+.i-before{
+color: rgb(172,172,172);
+position: absolute;
+z-index: 1;
+transition: .5s;
+}
+.i-after{
+transform: translateY(50px);
+ visibility: hidden; 
+transition: .5s;
+position: absolute;
+z-index: 5;
+}
+.sec5-content:hover .i-before{
+transform: translateY(-100px);
+}
+.sec5-content:hover .i-after{
+    transform: translateY(0px);
+    visibility: visible;
+    color: rgb(180, 27, 78)
+}
+.last{
+    padding: 20px 0;
+    background: rgb(24, 22, 22);
+    color: rgb(156, 160, 163);
+}
+.last-parent{
+    width:86% ;
+    margin: auto;
+}
+.last-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+.last1 h2{
+    color: palevioletred;
+    margin-bottom: 20px;
+}
+.last1 p{
+    font-size: 15px;
+}
+.last2 input{
+    width: 400px;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 20px
+}
+.last2 button{
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    background:palevioletred;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+     transition: .5s; 
+}
+.last2 button:hover{
+    transform: scale(1.05);
+}
+.last3{
+    display: flex;
+    justify-content: center;
+}
+.last-icons{
+    color: #848b8f;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: 1s;
+}
+.last-icons:hover{
+    transform: scale(1.2);
+color: palevioletred;
+}
+.last-content{
+    color: white;
+    padding: 40px 0;
+    width: 100%;
+    border-top: 1px solid #666561;
+    border-bottom: 1px solid #61605d;
+    display: flex;
+    justify-content: space-around;
+}
+.last-content ul{
+    list-style: none;
+}
+.last-content h3{
+    display: block;
+     font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+    font-weight: bold;
+     unicode-bidi: isolate; 
+}
+.last-content ul li{
+    color: #BBB9B5;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.last-content ul li:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.last-copy{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.last-copy p{
+    transition: 1s;
+}
+.last-copy a{
+    color: palevioletred;
+    transition: .5s;
+    margin-left: 4px;
+}
+.last-aa:hover a{
+    transform: scale(1.04);
+    text-decoration: underline;
+}
+.last-aa:hover +.last-p{
+    transform: translateX(-5px);
+}
+.last-p i{
+    animation-name: change;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes change{
+    0%{
+        color: black;
+        transform: scale(1);
+    }
+    100%{
+    color: palevioletred;
+        transform: scale(1.5);
+    }
+}
+.last-logo{
+    display: flex;
+     align-items: center;
+    gap: 10px;
+    height: 70%;
+}
+.last-logo .a1,.last-logo .a2{
+    color: white;
+    font-size: 28px;
+}
